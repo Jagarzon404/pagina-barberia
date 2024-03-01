@@ -1,0 +1,257 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px ;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c78c19;    /*hver es para captura evento del mause*/
+    text-decoration: underline;    /*subrayado */
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;   /*se crea la caja  */
+    border: 2px solid black;
+    /*en cambio de estas 3
+    border-color: black;   color de borde
+    border-width: 2px;      ancho de borde
+    border-style: solid;    estilo de la linea*/  
+
+    border-radius: 10px;
+    /* border-radius: 10px 25px 40px 50px;
+    definiendo cada radio para cada uno o en general con la anterior
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 10mm;
+    */
+}
+.productos li:hover{
+    border-color: #c78c19;
+}
+.productos li:active{
+    border-color: green;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;   
+}
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.productodescripcion{
+    font-size: 18px;
+}
+.productoprecio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(IMAGENES/bg.jpg);
+    padding: 40px;
+}
+.copy{
+    color: #bbbbbb;
+    font-size: 16px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0 ;
+}
+form label , form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.inputpadron{
+    display: block;
+    margin: 0 0 20px ;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0 ;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0 ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px ;
+    transition: 1s all;
+    cursor: pointer; ;
+}
+
+.enviar:hover{
+    background: darkorange ;
+    transform: scale(1.2) ;
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px ;
+}
+
+/* aca comienza el css de la pagina princial*/
+.principal{
+    padding: 3em 0 ;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+.baner{
+    width: 100% ;
+}
+
+/*main > p{ background: blue;}   /*afecta color de hijos directos en el main
+img + p{background: yellow;}  /*afecta color de primer parrafo despues de la imagen
+img ~ p{background: violet;} /*afecta todos los parrafos despues de la imagen
+.principal p:not(#mision) { background: green;  }afecta todo el parrafo menos al renglon con la clase mission*/
+
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    /*color: rgba(0, 0, 0, 0.3);   altera color la ultima celda es opacidad*/
+}
+   /* .tituloPrincipal::first-letter{
+        font-weight: bold;      "modificar primera letra con estilos"
+    }
+    .tituloPrincipal:before{ 
+        content: "[" ;          "adicionar caracteres antes"
+    }
+    .tituloPrincipal::after{
+        content: "]" ;          "adicionar caracteres despues"
+    }
+    p::first-line{
+        font-style: italic;     "modificar primera linea con estilos"
+    }*/
+
+.principal p{
+    margin: 0 0 1em
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utencilios{
+    width: 120px ;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em;
+    background: linear-gradient(/*90deg, se coloca grados de inclinacion*/#fefefe,#888888);
+    /*background: radial-gradient(#fefefe 70%,#888888);*/
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapaContenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    width: 3em 0;
+    background: #888888;
+}
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0 auto ;
+}
+.listaDiferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+.items::before{
+    content:"✧";
+}
+.items:first-child{
+    font-weight: bold;
+}
+.imagenDiferenciales{
+    width: 60% ;
+    transition: 400ms;
+    box-shadow: 10px 10px 15px 15px black;
+    /*1y2 son cordenada plano cartesiano,3 opacidad,4 expancion ,5 color " 
+    con inset queda la sombra interna y -text-shadow: es la mismo para textos*/
+}
+.imagenDiferenciales:hover{
+    opacity: 0.8;
+}
+.video{
+    width: 560px;
+    margin: 1em  auto;
+}
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapaContenido , .contenidoDiferenciales, .video {
+        width: auto ;
+    }
+    .listaDiferenciales , .imagenDiferenciales{
+        width: 100%;
+    }
+}
